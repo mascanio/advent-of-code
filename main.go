@@ -2,15 +2,22 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"time"
 
-	"github.com/mascanio/advent-of-code/day03"
+	"github.com/mascanio/advent-of-code/day04"
 )
 
 func main() {
 	defer func(t time.Time) {
 		fmt.Println(time.Since(t))
 	}(time.Now())
-	fmt.Println(day03.Day03b(os.Args[1]))
+	path := os.Args[1]
+	f, err := os.OpenFile(path, os.O_RDONLY, 0644)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+	fmt.Println(day04.Day04b(f))
 }
