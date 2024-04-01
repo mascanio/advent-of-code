@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/mascanio/advent-of-code/day08"
+	"github.com/mascanio/advent-of-code/day09"
 )
 
 func main() {
@@ -19,5 +19,5 @@ func main() {
 		log.Fatal(err)
 	}
 	defer f.Close()
-	fmt.Println(day08.Day08b(f))
+	fmt.Println(day09.Day09bparallel(f))
 }
