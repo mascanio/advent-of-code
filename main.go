@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	d "github.com/mascanio/advent-of-code/day16"
+	d "github.com/mascanio/advent-of-code/day17"
 )
 
 func main() {
