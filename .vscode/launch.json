@@ -10,7 +10,7 @@
             "request": "launch",
             "mode": "auto",
             "program": "main.go",
-            "args": ["b", "day17/test.txt"]
+            "args": ["b", "day18/test.txt"]
         }
     ]
 }
